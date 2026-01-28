@@ -1,2 +1,38 @@
-$link-color: $blue-000;
+/* Nord Color Palette Definitions */
+$nord0: #2e3440; // Polar Night (Background)
+$nord1: #3b4252; // Lighter Background
+$nord2: #434c5e; // Selection
+$nord3: #4c566a; // Comments
+$nord4: #d8dee9; // Snow Storm (Main Text)
+$nord5: #e5e9f0; // Brighter Text
+$nord6: #eceff4; // Brightest Text
+$nord8: #88c0d0; // Frost (Links)
+$nord9: #81a1c1; // Secondary Blue
+$nord11: #bf616a; // Aurora Red (Errors)
+$nord14: #a3be8c; // Aurora Green (Success)
+
+/* -------------------------------------------
+   OVERRIDE JUST-THE-DOCS VARIABLES
+   ------------------------------------------- */
+
+// 1. Backgrounds
+$body-background-color: $nord0;
+$sidebar-color: $nord1;
+$search-background-color: $nord2;
+
+// 2. Text
+$body-text-color: $nord4;
+$body-heading-color: $nord6;
+$nav-text-color: $nord4;
+$link-color: $nord8;
+
+// 3. UI Elements (Borders, Code, Tables)
+$border-color: $nord2;
+$code-background-color: $nord1;
+$table-header-background-color: $nord2;
+
+// 4. Search Bar Special Settings
+$search-input-color: $nord6;
+$search-input-background-color: $nord2;
+$search-input-border-color: $nord3;
 
