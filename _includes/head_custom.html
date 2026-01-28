@@ -1,0 +1,40 @@
+<style>
+  /* Override the default Dark Mode colors */
+  @media (prefers-color-scheme: dark) {
+    
+    /* Main Content Background - Soft Gray */
+    body {
+      background-color: #2f3136 !important; /* Discord-like Dark Gray */
+      color: #dcddde !important; /* Softer White Text */
+    }
+
+    /* Sidebar Background - Slightly Darker */
+    .site-nav, .site-header, .site-footer {
+      background-color: #202225 !important; 
+    }
+
+    /* Search Bar Input */
+    .search-input {
+      background-color: #40444b !important;
+      color: white !important;
+      border: 1px solid #202225 !important;
+    }
+
+    /* Code Blocks - Darker to stand out */
+    code, pre {
+      background-color: #202225 !important;
+    }
+    
+    /* Table borders */
+    th, td {
+      border-color: #40444b !important;
+    }
+  }
+  
+  /* Force these colors even if user settings vary, 
+     since you explicitly set color_scheme: dark in config */
+  body {
+    background-color: #2f3136 !important;
+    color: #dcddde !important;
+  }
+</style>
