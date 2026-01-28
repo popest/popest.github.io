@@ -43,3 +43,23 @@ $border-color: $nord2;
     background-color: $nord2 !important;    /* Use Dark Gray */
     color: $nord8 !important;               /* Cyan Text */
 }
+/* ------------------------------------------------------- */
+/* FIX SUB-CATEGORY CONTRAST                           */
+/* ------------------------------------------------------- */
+
+/* Target links that are inside a sub-list (children) */
+.site-nav .nav-list-item .nav-list-item .nav-list-link {
+    /* Force them to be Bright White */
+    color: $nord6 !important; 
+    
+    /* Optional: Slight opacity (0.9) to keep hierarchy subtle but readable */
+    /* Remove the next line if you want them 100% bright */
+    opacity: 0.9; 
+}
+
+/* Ensure the hover state for sub-items is still Cyan */
+.site-nav .nav-list-item .nav-list-item .nav-list-link:hover {
+    color: $nord8 !important; /* Cyan */
+    background-color: $nord2 !important; /* Dark Gray Background */
+    opacity: 1; /* Full brightness on hover */
+}
