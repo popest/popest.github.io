@@ -1,40 +1,41 @@
 <style>
-  /* Override the default Dark Mode colors */
-  @media (prefers-color-scheme: dark) {
-    
-    /* Main Content Background - Soft Gray */
-    body {
-      background-color: #2f3136 !important; /* Discord-like Dark Gray */
-      color: #dcddde !important; /* Softer White Text */
-    }
+  /* Nord Color Palette */
+  :root {
+    --nord0: #2e3440; /* Polar Night (Background) */
+    --nord1: #3b4252; /* Lighter Background */
+    --nord2: #434c5e; /* Selection/Highlight */
+    --nord3: #4c566a; /* Comments/Secondary */
+    --nord4: #d8dee9; /* Snow Storm (Text) */
+    --nord6: #eceff4; /* Bright Text */
+    --nord8: #88c0d0; /* Frost (Links/Accents) */
+  }
 
-    /* Sidebar Background - Slightly Darker */
-    .site-nav, .site-header, .site-footer {
-      background-color: #202225 !important; 
-    }
+  body {
+    background-color: var(--nord0) !important;
+    color: var(--nord4) !important;
+  }
 
-    /* Search Bar Input */
-    .search-input {
-      background-color: #40444b !important;
-      color: white !important;
-      border: 1px solid #202225 !important;
-    }
+  /* Sidebar */
+  .site-nav, .site-header, .site-footer {
+    background-color: var(--nord1) !important;
+  }
 
-    /* Code Blocks - Darker to stand out */
-    code, pre {
-      background-color: #202225 !important;
-    }
-    
-    /* Table borders */
-    th, td {
-      border-color: #40444b !important;
-    }
+  /* Links */
+  a { color: var(--nord8) !important; }
+  
+  /* Code Blocks */
+  code, pre {
+    background-color: var(--nord1) !important;
+    border: 1px solid var(--nord2) !important;
+  }
+
+  /* Search Bar */
+  .search-input {
+    background-color: var(--nord2) !important;
+    color: var(--nord6) !important;
+    border: 1px solid var(--nord3) !important;
   }
   
-  /* Force these colors even if user settings vary, 
-     since you explicitly set color_scheme: dark in config */
-  body {
-    background-color: #2f3136 !important;
-    color: #dcddde !important;
-  }
+  /* Table Borders */
+  th, td { border-color: var(--nord2) !important; }
 </style>
