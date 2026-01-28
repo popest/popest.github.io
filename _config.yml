@@ -1,23 +1,16 @@
-title: Your Name
-description: "Power Electronics & Embedded Systems Engineer"
+title: My Engineering Docs
+description: Portfolio of [Your Name]
 url: "https://yourusername.github.io" # Replace with your URL
 
-# This is the magic line that installs the theme
-remote_theme: mmistakes/minimal-mistakes
+# The critical line to switch themes
+remote_theme: just-the-docs/just-the-docs
 
-minim_mistakes:
-  skin: "air" # Options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# Enable the search bar (best feature of this theme!)
+search_enabled: true
 
-# Setup the sidebar with your info
-author:
-  name: "Your Name"
-  bio: "Specializing in firmware and hardware design."
-  location: "USA"
-  links:
-    - label: "GitHub"
-      url: "https://github.com/yourusername"
-    - label: "LinkedIn"
-      url: "https://linkedin.com/in/yourusername"
-
-plugins:
-  - jekyll-include-cache
+# Visual settings
+color_scheme: dark # Options: light, dark
+callouts:
+  warning:
+    title: Note
+    color: red
