@@ -2,7 +2,7 @@
 layout: default
 title: Fiber Optic Thermometer
 parent: Projects
-nav_order: 2
+nav_order: 1
 ---
 
 # Battery-Powered Thermometer
