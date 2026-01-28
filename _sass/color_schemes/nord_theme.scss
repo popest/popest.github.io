@@ -42,3 +42,15 @@ $border-color: $nord2;
     background-color: $nord2;
 }
 
+/* Override the HOVER state (when mouse moves over links) */
+.site-nav .nav-list-link:hover,
+.site-nav .nav-list-expander:hover {
+    /* Remove the default white gradient */
+    background-image: none; 
+    
+    /* Set the background to your dark selection color */
+    background-color: $nord2; 
+    
+    /* Optional: Keep text orange when hovering */
+    color: $nord8; 
+}
