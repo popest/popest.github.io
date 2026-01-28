@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fiber Optic Thermometer
-parent: Projects
+parent: HW Projects
 nav_order: 1
 ---
 
