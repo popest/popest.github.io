@@ -1,17 +1,15 @@
 ---
-layout: single
-title: "Welcome"
-author_profile: true
+layout: home
+title: Home
+nav_order: 1
 ---
 
-Hello! I am an engineer passionate about **power electronics** and **embedded systems**.
+# Engineering Portfolio
+Welcome. This site documents my work in **power electronics**, **firmware architecture**, and **embedded systems**.
 
-## My Featured Projects
+[Browse Projects](./docs/projects/){: .btn .btn-blue } [View Resume](./docs/resume/){: .btn .btn-outline }
 
-### 1. Battery Thermometer with Fiber Optic Link
-*Designed a 16-channel control unit for high-noise environments.*
-[View Details](#)
-
-### 2. Custom KiCad Library
-*Maintained a database-driven library for verified components.*
-[View Details](#)
+## Core Competencies
+* **Hardware:** KiCad, Altium, Conducted Emissions Testing
+* **Firmware:** ARM Cortex (STM32), C/C++, UART/SPI/I2C
+* **Tools:** Linux, Python, Spice Simulation
