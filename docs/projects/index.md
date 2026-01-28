@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: HW Projects
 has_children: true
 nav_order: 2
 ---
