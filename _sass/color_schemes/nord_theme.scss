@@ -23,3 +23,22 @@ $link-color: $nord8;
 
 $border-color: $nord2;
 
+/* Override the white background on the active menu item */
+.site-nav > .nav-list > .nav-list-item > .nav-list-link.active,
+.site-nav > .nav-list > .nav-list-item > .nav-list-expander[aria-expanded="true"] {
+    /* Remove the default white gradient */
+    background-image: none; 
+    
+    /* Set your own background color (e.g., slightly lighter than sidebar) */
+    background-color: $nord2; 
+    
+    /* Optional: Ensure text remains orange (or white) */
+    color: $nord8; 
+}
+
+/* Fix for sub-items (children) if they also turn white */
+.nav-list-link.active {
+    background-image: none;
+    background-color: $nord2;
+}
+
