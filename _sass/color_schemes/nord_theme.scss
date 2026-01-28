@@ -1,13 +1,14 @@
 /* _sass/color_schemes/nord_theme.scss */
 
-// 1. Define Nord Colors
-$nord0: #2e3440;
-$nord1: #3b4252;
-$nord2: #434c5e;
-$nord3: #4c566a;
-$nord4: #d8dee9;
-$nord6: #eceff4;
-$nord8: #cf6713;
+// 1. Define Colors
+$nord0: #2e3440; /* Dark Background */
+$nord1: #3b4252; /* Sidebar Background */
+$nord2: #434c5e; /* Selection Gray */
+$nord4: #d8dee9; /* Text White */
+$nord6: #eceff4; /* Bright Text */
+
+/* THE NEW ACCENT COLOR: Nord Frost (Cyan) */
+$nord8: #88c0d0; 
 
 // 2. Map to Theme Variables
 $body-background-color: $nord0;
@@ -19,42 +20,26 @@ $code-background-color: $nord1;
 $body-text-color: $nord4;
 $body-heading-color: $nord6;
 $nav-text-color: $nord4;
-$link-color: $nord8;
-
+$link-color: $nord8;        /* Sets links to Cyan */
 $border-color: $nord2;
 
-/* Override the white background on the active menu item */
-.site-nav > .nav-list > .nav-list-item > .nav-list-link.active,
-.site-nav > .nav-list > .nav-list-item > .nav-list-expander[aria-expanded="true"] {
-    /* Remove the default white gradient */
-    background-image: none; 
-    
-    /* Set your own background color (e.g., slightly lighter than sidebar) */
-    background-color: $nord2; 
-    
-    /* Optional: Ensure text remains orange (or white) */
-    color: $nord8; 
-}
+/* ------------------------------------------------------- */
+/* FORCE OVERRIDES (The "Nuclear" Fixes)                */
+/* ------------------------------------------------------- */
 
-/* Fix for sub-items (children) if they also turn white */
-.nav-list-link.active {
-    background-image: none;
-    background-color: $nord2;
-}
-
-/* FORCE Override for HOVER state */
-.site-nav .nav-list-link:hover,
-.site-nav .nav-list-expander:hover {
-    /* The !important tag forces this rule to win */
-    background-image: none !important; 
-    background-color: $nord2 !important; 
-    color: $nord8 !important; 
-}
-
-/* FORCE Override for ACTIVE (Selected) state */
+/* 1. Active (Selected) Menu Item */
 .site-nav .nav-list-link.active,
 .site-nav .nav-list-expander[aria-expanded="true"] {
-    background-image: none !important;
-    background-color: $nord2 !important;
-    color: $nord8 !important;
+    background-image: none !important;      /* Kill the white gradient */
+    background-color: $nord2 !important;    /* Use Dark Gray */
+    color: $nord8 !important;               /* Cyan Text */
+    font-weight: bold !important;
+}
+
+/* 2. Hover State (Mouse Over) */
+.site-nav .nav-list-link:hover,
+.site-nav .nav-list-expander:hover {
+    background-image: none !important;      /* Kill the white gradient */
+    background-color: $nord2 !important;    /* Use Dark Gray */
+    color: $nord8 !important;               /* Cyan Text */
 }
