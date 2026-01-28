@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Custom KiCad Database
-parent: Projects
+parent: KiCAD
 nav_order: 2
 ---
 
