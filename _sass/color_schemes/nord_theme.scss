@@ -42,15 +42,19 @@ $border-color: $nord2;
     background-color: $nord2;
 }
 
-/* Override the HOVER state (when mouse moves over links) */
+/* FORCE Override for HOVER state */
 .site-nav .nav-list-link:hover,
 .site-nav .nav-list-expander:hover {
-    /* Remove the default white gradient */
-    background-image: none; 
-    
-    /* Set the background to your dark selection color */
-    background-color: $nord2; 
-    
-    /* Optional: Keep text orange when hovering */
-    color: $nord8; 
+    /* The !important tag forces this rule to win */
+    background-image: none !important; 
+    background-color: $nord2 !important; 
+    color: $nord8 !important; 
+}
+
+/* FORCE Override for ACTIVE (Selected) state */
+.site-nav .nav-list-link.active,
+.site-nav .nav-list-expander[aria-expanded="true"] {
+    background-image: none !important;
+    background-color: $nord2 !important;
+    color: $nord8 !important;
 }
